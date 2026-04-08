@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#using until loop to print best school 10 times
+displaying=$"Best School"
+numbers=1
+until [ $numbers -gt 10 ]
+
+    do
+echo "$displaying"
+numbers=$((numbers + 1))
+done
