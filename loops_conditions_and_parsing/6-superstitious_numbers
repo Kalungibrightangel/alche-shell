@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#using case instead of if
+
+opening(){
+numbers=1
+  while [ $numbers -le 20 ]; do
+  case $numbers in
+       4) echo "bad luck from China"
+       ;;
+       9) echo "bad luck from Japan"
+       ;;
+       17) echo "bad luck from Italy"
+       ;;
+       *) echo "Best School"
+       ;;
+  esac
+numbers=$((numbers + 1))
+done
+}
+opening
