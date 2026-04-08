@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#bad luck for 4th loop, good luck 8th loop
+
+opening(){
+
+displaying="Best School"
+numbers=0
+while [ $numbers -le 9 ]; do
+    
+    numbers=$((numbers + 1))
+if [ $numbers -eq 4 ]; then
+    echo "bad luck"
+elif
+    [ $numbers -eq 8 ]; then
+    echo "good luck"
+else
+    echo "$displaying"
+fi
+done
+}
+opening
+
+    
