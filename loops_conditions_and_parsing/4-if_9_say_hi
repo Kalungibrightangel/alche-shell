@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#u sing while loop, hi on number nine
+
+opening(){
+  displaying="Best School"
+  numbers=1
+while [ $numbers -le 10 ]; do
+numbers=$((numbers + 1))
+
+echo "$displaying"
+
+   if [ $numbers -eq 10 ]; then
+
+echo "Hi"
+fi
+done
+}
+opening
