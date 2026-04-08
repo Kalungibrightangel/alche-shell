@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Using while loop to display Best school 10 times
 displaying=$"Best School"
-numbers=1
+numbers=0
 while [ $numbers -lt 10 ];
 do 
 echo "$displaying"
