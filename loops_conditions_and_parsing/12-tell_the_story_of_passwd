@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-# Display formatted info from /etc/passwd using while + IFS
+#displaying username, passwd and uid info
 
-while IFS=: read -r username password _ groupid userinfo homedir shell; do
-    echo "The user $username is part of the $groupid gang, lives in $homedir and rides $shell. USER ID's place is protected by the passcode $password, more info about the user here: $userinfo"
+while IFS=':' read -r username password uid gid info home shell
+do
+  echo "The user $username is part of the $gid gang, lives in $home and rides $shell. USER ID $uid's place is protected by the passcode $password, more info about the user here: $info"
 done < /etc/passwd
+
+
 
