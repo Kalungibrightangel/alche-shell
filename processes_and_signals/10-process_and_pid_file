@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#creating and trapping
+PIDFILE="/var/run/myscript.pid"
+
+# Write the current PID into the file
+echo $$ > "$PIDFILE"
+
+# Trap signals
+trap 'echo "I hate the kill command";' SIGTERM
+trap 'echo "Y U no love me?!";' SIGINT
+trap 'rm -f "$PIDFILE"; echo "Cleaning up..."; exit 0' SIGQUIT SIGTERM
+
+# Main loop
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
+

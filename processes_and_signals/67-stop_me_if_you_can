@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#kills 7-highlander
+#kills 10-process_and_pid_file
 
-pkill -f 7-highlander
+pkill -9 -f 10-process_and_pid_file 
