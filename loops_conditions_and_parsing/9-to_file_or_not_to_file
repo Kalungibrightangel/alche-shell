@@ -10,10 +10,12 @@ else
 fi
 
 if [ ! -s "$file" ]; then
-	echo "file is empty"
+	echo "school file is empty"
 else
 	echo "school file is not empty"
 fi
 if [ -f "$file" ]; then
 	echo "school is a regular file"
+else
+	echo "school file does not exist"
 fi
