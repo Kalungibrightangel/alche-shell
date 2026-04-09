@@ -1,0 +1,4 @@
+#!/usr/bin/env bash 
+#kills the process 7104
+
+kill 2861
